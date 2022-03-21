@@ -1,0 +1,1010 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Genos:ital,wght@0,200;1,200&family=Montserrat:wght@600&family=Oswald:wght@500&family=PT+Serif:wght@700&family=Poppins&family=Roboto+Slab:wght@100&family=Roboto:wght@900&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins",sans-serif;
+    line-height: 1.2;
+    text-decoration:none;
+    list-style: none;
+
+}
+html,body{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+   
+    background: #f8fafe;
+}
+ 
+@keyframes body {
+    0%{
+    position: relative;
+    left: -100%;
+    }
+    50%{
+        left: 0%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+  a{
+      text-decoration: none;
+  }
+  ul{
+      list-style: none;
+      width: 100%;
+  }
+ #header .container101{
+      margin: 0px;
+      width: 100vw;
+  }
+
+  .row1{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      top:0;
+      right: 0;
+      padding: 0px 100px;
+      height: 80px;
+     background: white;
+    padding:20px;
+  }
+
+  /*header*/
+  #header{
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      height: 80px;
+      width: 100%;
+      align-items: center;
+   
+  }
+  #header .logo,
+  #header .nav{
+      padding:0 10px;
+  }
+  #header .logo a{
+      font-size: 30px;
+      text-transform: capitalize;
+      position: relative;
+      color: #140B5C;
+      font-weight: 1000;
+      margin-left: 25px;
+    text-decoration: none;
+}
+#header .logo{
+    vertical-align: middle;
+}
+  .fa-bars{
+      text-align: center;
+      color: #ff656a;
+      font-size: 30px;
+  }
+  @media screen and (max-width:448px) {
+    #header .logo a{
+        left: 0px;
+    }
+  }
+  #header .nav ul li{
+      display: inline-block;
+      margin-left: 35px;
+  }
+  #header .nav ul li a{
+      display: block;
+      font-size: 16px;
+      padding:10px 0;
+      color: #002e5b;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+      text-decoration: none;
+  }
+  #header .nav ul li a:hover,
+  #header .nav ul li a.active{
+      color: #ff656a;
+  }
+  #header #nav-check{
+      position: absolute;
+      opacity:0;
+      pointer-events: none;
+  }
+  .nav-toggler{
+      height: 34px;
+      width: 44px;
+    
+      border-radius: 4px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+  }
+  .nav-toggler span{
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color:#ff656a;
+      position: relative;
+      color: #ff656a;
+  }
+  .nav-toggler span::before,
+  .nav-toggler span::after{
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: #ff656a;
+     left:0;
+  }
+  .nav-toggler span::before{
+      top: -6px;
+  }
+  .nav-toggler span::after{
+      top: 6px;
+  }
+  @media(max-width: 1000px){
+      .nav-toggler{
+          display: flex;
+      }
+    #header .nav{
+          position: absolute;
+          left:50%;
+          top:100%;
+          width: 50%;
+       background-color: white;
+          border-top: 1px solid rgba(255,255,255,0.2);
+          opacity:0;
+          visibility: hidden;
+      }
+      #header .nav ul li{
+          display: block;
+          margin:0;
+          text-align: center;
+          color: black;
+      }
+      #header #nav-check:checked ~ .nav{
+         opacity: 1;
+         visibility: visible;
+      }
+      #header #nav-check:focus ~ .nav-toggler{
+          box-shadow: 0 0 15px #000000;
+      }
+      #header #nav-check:checked ~ .nav-toggler span{
+          background-color: transparent;
+      }
+      #header #nav-check:checked ~ .nav-toggler span::before{
+          top:0;
+          transform: rotate(45deg);
+      }
+      #header #nav-check:checked ~ .nav-toggler span::after{
+          top:0;
+          transform: rotate(-45deg);
+      }
+  }
+
+/*rsmmain*/
+.rsmmain{
+    padding: 40px;
+
+}
+.bg{
+    position: relative;
+    z-index: -1;
+}
+#svg1{
+    position: absolute;
+    top: 100px;
+    left: -250px;
+    width: 500px;
+    z-index: -1;
+}
+#svg2{
+    position: absolute;
+    top: 80px;
+    right: -100px;
+    width: 400px;
+    opacity: 0.7;
+    z-index: -1;
+}
+#svg3{
+    position:absolute;
+    top: 1000px;
+    right: 100px;
+    width: 400px;
+    opacity: 0.7;
+    z-index: -1;
+}
+.rsmflex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+.rsmtxt{
+    width: 50%;
+   padding: 70px 40px;
+}
+.rsmtxt h1{
+    font-size: 70px;
+    font-weight: 700;
+    width: 100%;
+    line-height:80px;
+    text-align: left;
+}
+.rsmtxt p,.servicedetails p{
+    width: 80%;
+    margin-top: 30px;
+    line-height: 25px;
+    font-size: 16px;
+    color: grey;
+   
+    text-align: justify;
+}
+.rsmtxt button,.projectdes button{
+    border:1px solid;
+    min-width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #cc2973;
+}
+.rsmflex .rsmtxt button:hover{
+    background-color:#cc2973;
+    color: white;
+}
+.rsmflex .rsmtxt button:hover a{
+    color: white;
+}
+.rsmtxt button a{
+    text-decoration: none;
+}
+#b2{
+    border: 1px solid #4555d2;
+    background-color:#4555d2;
+    color: white;
+} 
+#b2 a{
+    color: white;
+}
+#b2:hover{
+    background-color: transparent;
+}
+#b2:hover a{
+    color: #4555d2;
+}
+.rsmabout,.rsmservices{
+    background-color: #f9fafe;
+    padding: 11rem 9.25rem ;
+}
+@media screen and (max-width:1024px) {
+    .rsmflex{
+        display: block;
+    }
+    .rsmtxt{
+        width: 100%;
+    }
+    .rsmimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rsmimg img{
+        height: 500px;
+    }
+    #svg1{
+        width: 200px;
+        left: -150px;
+        top: -10px;
+    }
+    #svg2{
+        width: 200px;
+        right: -130px;
+        top: -10px;
+    }
+    .rsmtxt h1{
+        text-align: center;
+    }
+    .rsmtxt p{
+        text-align: center;
+        width: 100%;
+    }
+    .button{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .rsmtxt button{
+        margin-left: 5px;
+    }
+    .rsmabout{
+
+     width: 100%;
+        padding: 9.25rem 5rem 8.75rem;
+    }
+}
+.rsmservices{
+    background-color: white;
+}
+.rsmabout h1,.rsmpro h1,.teamhead h1{
+    color: #191e47;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 4rem;
+    letter-spacing: -0.2px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.rsmabout p{
+    width: 70%;
+    font-size:14.5px;
+    line-height: 2.5rem;
+    color: #6c717b;
+    font: 200 "Open Sans", sans-serif;
+    font-size: 18px;
+}
+.rsmservices{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.domain1 {
+    background-color:#f9fafe ;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position:relative;
+  
+}
+.domain1 img{
+   width: 80px;
+   position: relative;
+}
+.servicenames{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.servicenames  div{
+   margin-left: 30px;
+   margin-bottom: 70px;
+}
+.domain1>div{
+    margin: 0px;
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+.servicedetails h1{
+    color: #191e47;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 4rem;
+    letter-spacing: -0.2px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.servicedetails p{
+    margin-top: 10px;
+}
+.servicedetails ol li{
+    margin-top: 10px;
+    lighting-color: #002e5b;
+    font-size: 15px;
+}
+.projecticon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: 20px;
+}
+.rsmpro h1{
+    text-align: center;
+    width: 100%;
+  
+    font-size: 40px;
+}
+.projecticon div{
+    height: 60px;
+    box-shadow: 0px 3px 2px 0px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+
+}
+
+.projecticon div img{
+    width: 40px;
+    padding:-60px;
+}
+.projecticon a:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width:768px)
+ {
+    .projecticon div{
+        padding: 20px;
+    }
+    
+}
+@media screen  and (max-width:414px){
+    .projecticon div{
+        width: 60px;
+    }
+    .projecticon div img{
+        width: 30px;
+    }
+}
+
+#show,#show2,#show3,#show4{
+    display: none;
+}
+.projecticon button:hover{
+    transform: scale(1.4);
+}
+/*team*/
+.rsmteam1{
+    border: 1px solid grey
+    ;
+    width: 300px;
+
+}
+
+.rsmteam1 img{
+    width: 100%;
+}
+.name h1,.name h2{
+    text-align: center;
+}
+.name h1{
+    font-size:3rem;
+}
+.name h2{
+    font-size: 2rem;
+}
+.rsmteam1:hover{
+    box-shadow: 0px 4px 5px 0px grey;
+}
+.rsmteam{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    padding: 30px;
+    grid-row-gap: 20px;
+}
+#rsmteamid {
+    background-color: #f9fafe;
+}
+#rsmteamid >h1{
+    color: #191e47;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+.rsmprojects{
+    margin-top: 30px;
+}
+.projecticon button{
+    background-color: transparent;
+    border: none;
+}
+.projects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+.projects h1{
+    text-align: center;
+}
+.projectdes h2::after{
+    content: "";
+    position:absolute;
+    border-bottom:2px solid  #cc2973;
+    width: 150px;
+    margin-top: 40px;
+    left: 116px;
+}
+.projectdes{
+    width: 50%;
+}
+.rsmpro h1{
+    padding-top: 100px;
+    margin-top: 50px;
+    font-size:40px;
+   font-weight: 900;
+}
+
+.projectdes p{
+    text-align: justify;
+    font-size: 18px;
+}
+.projectdes button{
+    background-color:#cc2973;
+    color: white;
+    padding: 10px;
+}
+@media screen and (max-width:1024px)
+ {
+    .rsmabout h1{
+        width: 100%;
+         font-size: 20px;
+        font-size: 20px;
+        line-height: 3rem;
+    }   
+    .rsmabout p{
+        width: 100%;
+         
+    } 
+    .rsmservices{
+        display: block;
+        padding: 40px;
+    }
+
+    .servicedetails h1{
+        width: 100%;
+    }
+    .servicedetails p{
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    .servicenames{
+        width: 80%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:
+1024px) {
+    .servicenames{
+        width: 100%;
+        margin-top: 40px;
+     
+    }
+    .servicenames div{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:767px) {
+    .servicenames {
+        width: 50%;
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:768px) {
+    .rsmtxt h1{
+        font-size:40px;
+        line-height: 50px;
+        padding: 0px;
+    }
+    .rsmtxt{
+        padding: 40px;
+        width: 100%;
+    }
+    .rsmmain{
+        padding: 0px;
+    }
+    .projectdes p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:414px) {
+    .rsmtxt button{
+        width: 100px;
+    }
+}
+@media screen and (max-width:768px) {
+    .rsmtxt button{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:468px) {
+    .rsmimg img{
+        height: 400px;
+        width: 300px;
+    }
+    .rsmabout{
+        padding: 40px;
+    }
+
+}
+
+@media screen and (max-width:978px) {
+    .projects{
+        display: block;
+    }
+    .projectdes{
+        width: 100%;
+       
+    }
+    .projectdes h2::after{
+        left: 30px;
+    }
+    .projectimage{
+        width: 100%;
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+    }
+   
+}
+@media screen and (max-width:441px) {
+    .projectimage img{
+        width: 300px;
+    }
+}
+/*footer*/
+footer{
+    position:relative;
+  background: #f8fafe;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    min-height:100px ;
+    clear: both;
+  }
+  /*footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+    background: #AFAFB6;
+  }*/
+  footer .content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 15px 10px 10px 10px;
+  }
+
+  .content .logo-details{
+    color: #012f5f;
+    font-size: 50px;
+  }
+
+  .content .media-icons{
+    display: block;
+    margin-top: 10px;
+  }
+  .content .media-icons a{
+   
+    width: 40px;
+    margin: 0 8px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    padding:0px  5px;
+  
+  }
+  .top .media-icons a:nth-child(1){
+    background: #4267B2;
+  }
+  .top .media-icons a:nth-child(1):hover{
+    color: #4267B2;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(2){
+    background: #1DA1F2;
+  }
+  .top .media-icons a:nth-child(2):hover{
+    color: #1DA1F2;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(3){
+    background: #E1306C;
+  }
+  .top .media-icons a:nth-child(3):hover{
+    color: #E1306C;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(4){
+    background: #0077B5;
+  }
+  .top .media-icons a:nth-child(4):hover{
+    color: #0077B5;
+    background: #fff;
+  }
+  footer .content .link-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 4 - 10px);
+    text-align: center;
+  }
+  .content .link-boxes .box .link_name{
+    color: #012f5f;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .content .link-boxes .box li{
+    margin:20px 0;
+    list-style: none;
+  }
+  .content .link-boxes .box li a{
+    color: #868c98;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease
+  }
+  .content .link-boxes .box li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .content .link-boxes .input-box{
+    margin-right: 55px;
+  }
+  .link-boxes .input-box input{
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #AFAFB6;
+    background: #140B5C;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+  }
+  .link-boxes .input-box input::placeholder{
+    color: #AFAFB6;
+    font-size: 16px;
+  }
+  .link-boxes .input-box input[type="button"]{
+    background: #fff;
+    color: #140B5C;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .input-box input[type="button"]:hover{
+    opacity: 1;
+  }
+  footer .bottom-details{
+    width: 100%;
+    background: #0F0844;
+  }
+  footer .bottom-details .bottom_text{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+  .bottom-details .bottom_text a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  .bottom-details .bottom_text a{
+    margin-right: 10px;
+  }
+  @media (max-width: 900px) {
+    footer .content .link-boxes{
+      flex-wrap: wrap;
+    }
+    footer .content .link-boxes .input-box{
+      width: 40%;
+      margin-top: 10px;
+    }
+  }
+  @media screen and (max-width:972px){
+    .logo_name{
+        font-size: 30px;
+    }
+    .content .media-icons a{
+        margin: 0 2px;
+    }
+  }
+  @media (max-width: 700px){
+    footer{
+      position: relative;
+    }
+    .content .top .logo-details{
+      font-size: 26px;
+    }
+    .content .top .media-icons a{
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+      line-height: 35px;
+    }
+    footer .content .link-boxes .box{
+      width: calc(100% / 2 - 10px);}
+      
+    footer .content .link-boxes .input-box{
+      width: 60%;
+    }
+  }
+  @media (max-width: 520px){
+    footer::before{
+      top: 145px;
+    }
+    footer .content .top{
+      flex-direction: column;
+    }
+    .content .top .media-icons{
+      margin-top: 16px;
+    }
+    footer .content .link-boxes .box{
+      width: calc(100% - 10px);
+    }
+    footer .content .link-boxes .input-box{
+      width: 100%;
+    }
+  }
+  
+
+
+  .teamsection{
+    margin-top: 80px;
+  }
+  .teamhead h1{
+      text-align: center;
+      font-size:6rem ;
+    padding-top:50px;
+    width: 100%;
+  }
+
+  .coord .hover:hover{
+      box-shadow: 0px 5px 5px 5px grey;
+  }
+  .coord .hover:hover .teamdetails{
+      border: none;
+  }
+  .teamlead{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 300px;
+     margin-top: 15px;
+     padding: 40px;
+   
+  }
+  @media screen and (max-width:348px) {
+    .teamlead
+    {
+     padding: 15px;
+    }
+    .teamhead h1{
+        font-size: 4rem;
+    }
+  }
+  #lead{
+      border: 2px solid white;
+      width: 300px;
+  }
+  .teamlead img{
+      width: 100%;
+  }
+  .coord{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      place-items: center;
+     padding: 40px;
+      flex-wrap: wrap;
+      text-align: center;
+    
+  }
+  .coord > div{
+      width: 300px;
+      height: 400px;
+      margin-left: 20px;
+      margin-right: 15px;
+      margin-top:30px;
+      border: 1px solid white;
+      place-items: center;
+      
+  }
+  .teamdetails{
+      border: 2px solid black;
+  }
+  .coord img{
+      width: 100%;
+      height:auto;
+  }
+  .teamdetails h1{
+      font-size: 25px;
+      padding: 0px 10px;
+      text-align: center;
+  }
+  .teamdetails h2{
+      font-size: 20px;
+      text-align: center;
+  }
+  /*#contact{
+      position:relative;
+      margin: 60px;
+      padding: 0px;
+      box-shadow: 10px 10px 10px 10px solid azure;
+  }*/
+  @media screen and (max-width:768px) and (min-width:481px) {
+      .coord>div{
+          width: 100%;
+          height: auto;
+      }
+      #lead{
+          width: 100%;
+      }
+      .teamlead{
+          height: auto;
+        padding: 15px;
+      }
+  }
+  @media screen and (min-width:769px) and (max-width:999px) {
+      #co11{
+          background-color: red;
+          border: 10px solid black;
+          justify-self: flex-start;
+      }
+  }
+  @media screen and (min-width:1024px) {
+    .coord{
+        padding: 40px;
+    }
+  }
+
+}
+  @media screen and (max-width:441px) {
+      .coord{
+          padding: 0px;
+      }
+  }
+  .rsmservices{
+      background:url("")
+  }
+
+  ol li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #cc2973; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  
+}
+@media screen and (max-width:441px){
+    .rsmaboutmain{
+        font-size: 20px;
+    }
+}
+.sticky{
+    box-shadow: 0px 5px 10px 0px gray;
+}

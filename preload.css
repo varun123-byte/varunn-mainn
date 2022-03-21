@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+#preloader1{
+   padding-top: 50px;
+}
+#preloader1{
+    display: none;
+    position: relative;
+}
+#preloader3{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+#loader{
+   border: 10px solid grey;
+   border-radius: 50%;
+   height: 120px;
+   width: 120px;
+   border-top: 10px solid #ff656a;
+   text-align: center;
+   animation: spin 2s ease infinite;
+   padding: 55px;
+}
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+}
+#webname{
+   position: absolute;
+
+    font-size: 20px;
+}
